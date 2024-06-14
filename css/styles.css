@@ -77,12 +77,83 @@ header aside h2 {
 }
 
 header aside p {
-
     margin-top: 20px;
     display: flex;
     align-items: center;
     
 }
+
+nav {
+    width: 100%;
+    margin: 20px 20px;
+}
+
+/*nav, nav ul {
+    text-align: left;
+    line-height: 1;
+}
+
+nav a {
+    display: block;
+    width: 130px;
+}*/
+
+/*all list items floated up and towards the left*/
+
+nav ul {
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+    cursor: pointer; /*changes cursor to a pointer even if text is not a link (good for dropdown menus */
+}
+
+nav ul li {
+    position: relative;
+    float: left;
+    padding: 15px 10px ;
+}
+
+/*nav ul li a {
+    display: block;
+    text-decoration: none;
+}*/
+
+nav ul li:hover {
+    background: rebeccapurple;
+    color: #F3F6F7;
+}
+
+nav #dropdown {
+    display: inline-block;
+    width: 150px; /*sets submenu width*/
+}
+
+nav #dropdown ul{
+    position: absolute;
+    
+}
+
+nav #dropdown ul a:hover {
+    display: block;
+    
+}
+
+/*ul li ul li:hover {
+    background: #52707A;
+    position: absolute;
+    display: block;
+    top: 80px;
+    color: white;
+
+     /*moves submenu from way offscreen to its proper location on screen
+}*/
+
+/*ul li ul li a{
+    background: white;
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+}*/
 
 #projects, #work {
     padding-top: 60px;
